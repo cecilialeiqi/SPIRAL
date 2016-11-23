@@ -1,5 +1,5 @@
 function runme(filename)
-file_dir='../UCR_TS_Archive_2015/';
+file_dir='./data/';
 
 Train=load(strcat(file_dir,filename,'/',filename,'_TRAIN'));
 Test=load(strcat(file_dir,filename,'/',filename,'_TEST'));
