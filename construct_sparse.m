@@ -7,12 +7,12 @@ function [D,Omega,d]=construct_sparse(X,n,m)
 	Omega={};
 	d=zeros(n,1);
     length=size(X{1},1);
-	wsize=ceil(length/10);
+	wsize=ceil(length/30);
 	if wsize>40
 		wsize=40;
 	end
-	if wsize<10
-		wsize=10;
+	if wsize<1
+		wsize=1;
 	end
 	id2d=randsample(n*n,2*m,'false');
 	idi=floor((id2d-1)/n)+1;
